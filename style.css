@@ -1,17 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /* --text: #0F1A20;
+    --background: #88A2AA;
+    --base: #ADA296;
+    --highlight: #F42C04;
+    --subtle: #E2856E;
+
+    /*  */
+    /* CSS HEX 
+    --base: #F00E2Bff;
+    --highlight: #E9E6E2ff;
+    --text: #183E67ff;
+    --subtle: #C3C9CEff;
+    --background: #FDFDFDff;
+
+    /* CSS HEX 
+    --background: #47332Cff;
+    --base: #FDFDFDff;
+    --red-pigment: #F00E2Bff;
+    --highlight: #1175C6ff;
+    --international-orange-engineering: #BD0312ff;
+    --platinum: #E9E6E2ff; */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans';
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px;
+    margin-top:60px;
+}
+#logoMarioKart{
+    font-size: 80px;
+    font-weight: 600;
+}
+#logoDataScience{
+    font-size:100px;
+}
+
+/* nav styles */
+nav {
+    display:flex;
+    justify-content: center;
+    padding-bottom:20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-size: 40px;
+    padding: 20px 50px;
+    justify-content: center;
+}
+
+nav ul li:hover {
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:initial;
+}
+
+/* body paragraphs */
+
+p{
+    width:65vw;
+    font-size:30px;
+    padding:30px;
+}
+h4{
+    font-size:40px;
+}
+.results-holder{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+.result{
+    font-size:25px;
+    width:400px;
+    padding:20px;
+}
+
+
+/* progress bar CSS */
 .progress-bar {
-    width: 100%;
-    position:fixed;
-    bottom:0;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    height:100px;
+}
+.progress-bar-space{
+    width:100vw;
+    height:100px;
 }
 
 
 .progress-bar img {
-    width: 10%;
-    /* height: 30px; */
-    background-color: #04AA6D;
+    height:100%;
     text-align: right;
     line-height: 30px;
-    color: white;
-    margin-top:2px;
-    margin-bottom:2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }

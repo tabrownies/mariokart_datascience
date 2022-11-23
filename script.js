@@ -16,3 +16,16 @@ function move(loc) {
     // set the element
     progressBarElement.style.marginLeft = loc + "%";            
 }
+
+// prepare for progress bar scrolling
+let body = document.body,
+    html = document.documentElement;
+
+let height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+
+function dummy(event){
+    scrollPercentage = 99*html.scrollTop/(html.scrollHeight-window.innerHeight)
+    move(scrollPercentage)
+}
