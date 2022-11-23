@@ -1,0 +1,17 @@
+.progress-bar {
+    width: 100%;
+    position:fixed;
+    bottom:0;
+}
+
+
+.progress-bar img {
+    width: 10%;
+    /* height: 30px; */
+    background-color: #04AA6D;
+    text-align: right;
+    line-height: 30px;
+    color: white;
+    margin-top:2px;
+    margin-bottom:2px;
+}
