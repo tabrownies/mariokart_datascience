@@ -22,6 +22,12 @@
     --highlight: #1175C6ff;
     --international-orange-engineering: #BD0312ff;
     --platinum: #E9E6E2ff; */
+    --text1: #010A10;
+    --text2: #211D21;
+    --background1: #FFFBF2;
+    --background2: #DFE2DB;
+    --highlight1: #C10206;
+    --highlight2: #A50113;
 }
 
 * {
@@ -35,6 +41,8 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
+    color: var(--text2);
+    background-color: var(--background1);
 }
 
 /* header styles */
@@ -44,6 +52,8 @@ header {
     align-items: center;
     padding:40px;
     margin-top:60px;
+    color: var(--text1);
+
 }
 #logoMarioKart{
     font-size: 80px;
@@ -77,7 +87,7 @@ nav ul li:hover {
 
 nav ul li a {
     text-decoration: none;
-    color:initial;
+    color:var(--text1);
 }
 
 /* body paragraphs */
@@ -101,6 +111,23 @@ h4{
     padding:20px;
 }
 
+/* footer info */
+footer{
+    background-color:var(--background2);
+    border-top:var(--highlight1) 3px solid;
+}
+footer ul{
+    width:100vw;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size:25px;
+    /* this should have the same color as the spacer */
+}
+footer ul li{
+    padding:20px;
+}
+
 
 /* progress bar CSS */
 .progress-bar {
@@ -112,6 +139,7 @@ h4{
 .progress-bar-space{
     width:100vw;
     height:100px;
+    background-color: var(--background2);
 }
 
 
