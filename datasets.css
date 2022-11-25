@@ -7,18 +7,8 @@ p{
 h4{
     font-size:40px;
 }
-.results-holder{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    list-style-type: none;
-}
-.result{
-    font-size:25px;
-    width:400px;
-    padding:20px;
-}
+
 .dataset-download-link{
-    color:initial;
     font-size:30px;
     padding-bottom:30px;
 }
