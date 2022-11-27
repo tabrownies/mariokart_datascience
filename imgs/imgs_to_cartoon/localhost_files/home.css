@@ -4,11 +4,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding:40px;
-    align-items: center;
 }
 
 .content p{
     color: var(--text1);
+    display: flex;
     font-size:45px;
     padding:40px;
     line-height: 70px;
@@ -19,7 +19,7 @@
     padding:30px;
     width:100%;
 }
-.paragraph-color-emphasis{
+.paragraph-emphasis{
     color: rgb(224,50,53);
 }
 /* .content #toad{

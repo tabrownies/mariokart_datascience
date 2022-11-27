@@ -3,48 +3,49 @@
 
     <head>
         <link href="style.css" rel="stylesheet" type="text/css">
-        <link href="home.css" rel="stylesheet" type="text/css">
     </head>
 
-    <body onscroll="dummy(event)">
+    <body>
         <header>
-            <span id="logoMarioKart">Mario Kart</span> <span id="logoDataScience">Data Science</span>
+            Mario Kart Data Science
         </header>
-        <nav>
+        <div class="content dark">
+            <img src="imgs/mario.png">
+            <p>
+                We're a <span class="paragraph-color-emphasis-mario">team</span> of budding <span class="paragraph-color-emphasis-mario">data scientists</span> excited to apply our newfound skills to everything <span class="paragraph-color-emphasis-mario">Mario Kart.</span>
+            </p>
+        </div>
+        <div class="content light">
+            <p>
+                Welcome to the world where Luigi meets <span class="paragraph-color-emphasis-toad">Logistic Regression,</span> karts meet <span class="paragraph-color-emphasis-toad">KMeans,</span> and Koopa Troopas meet <span class="paragraph-color-emphasis-toad">Pandas!</span>
+            </p>
+            <img src="imgs/toad.png" id="toad">
+        </div>
+        <div class="results dark">
+            <h2>
+                Explore our recent results
+            </h2>
             <ul>
-                <!-- <li><a href="index.html">Home</a></ldi> -->
-                <li><a href="analysis.html">Analysis</a></li>
-                <li><a href="datasets.html">Datasets</a></li>
-            </ul>
-        </nav>
-        <p>
-            Mario Kart is one of the best selling video games of all time. We're a team of budding data scientists excited to apply our newfound skills to everything Mario Kart.
-        </p>
-        <p>
-            Welcome to the world where Luigi meets Logistic Regression, karts meet KMeans classification, and Koopa Troopas meet Pandas.
-        </p>
-        <h4 class="view-results">
-            View our recent results <a href="analysis.html">here!</a>
-        </h4>
-        <footer>
-            <ul>
                 <li>
-                    Future Ideas
+                    <a href="#" class="result-link">
+                        <h2>Course Type Clustering</h2>
+                        <p>
+                            In Mariokart 8 Deluxe, players carefully choosing which character, kart, tires, and glider they use. These choices determine their stats, their acceleration, top speed, etc, while racing. We used KMeans clustering to group the courses based on the stats chosen by the world record holders for each respective course.
+                        </p>
+                        <img src="analysis_pages/mk8d_course_cluster/course_cluster_150.png">
+                    </a>
+                    
                 </li>
                 <li>
-                    Contact Us
-                </li>
-                <li>
-                    About us
-                </li>
-                <li>
-                    Our Inspiration
+                    <a href="#" class="result-link">
+                        <h2>200cc and 150cc World Record Comparison</h2>
+                        <p>
+                            We explore exactly how much faster 200cc world record times are from their 150cc counterparts. We examine how optimal path through the course differs for different speeds.  
+                        </p>
+                        <img src="analysis_pages/mk8d_wr_comp/mario_regression_separated.png">
+                    </a>
                 </li>
             </ul>
-        </footer>
-        <div class="progress-bar-space"></div>
-        <div class="progress-bar">
-            <img id="progressBarImage" src="imgs/mario_transparent.png">
         </div>
         <script src="script.js"></script>
     </body>
