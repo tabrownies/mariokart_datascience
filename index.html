@@ -9,20 +9,25 @@
     <body onscroll="dummy(event)">
         <header>
             <span id="logoMarioKart">Mario Kart</span> <span id="logoDataScience">Data Science</span>
+            <nav>
+                <ul>
+                    <!-- <li><a href="index.html">Home</a></ldi> -->
+                    <li><a href="analysis.html">Analysis</a></li>
+                    <li><a href="datasets.html">Datasets</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <!-- <li><a href="index.html">Home</a></ldi> -->
-                <li><a href="analysis.html">Analysis</a></li>
-                <li><a href="datasets.html">Datasets</a></li>
-            </ul>
-        </nav>
-        <p>
-            Mario Kart is one of the best selling video games of all time. We're a team of budding data scientists excited to apply our newfound skills to everything Mario Kart.
-        </p>
-        <p>
-            Welcome to the world where Luigi meets Logistic Regression, karts meet KMeans classification, and Koopa Troopas meet Pandas.
-        </p>
+        <div id="content">
+            <img src="imgs/mario.png">
+            <p>
+                Mario Kart is one of the best selling video games of all time. We're a team of budding data scientists excited to apply our newfound skills to everything Mario Kart.
+            </p>
+            <p>
+                Welcome to the world where Luigi meets Logistic Regression, karts meet KMeans classification, and Koopa Troopas meet Pandas.
+            </p>
+            <img src="imgs/toad.png" id="toad">
+        </div>
+        
         <h4 class="view-results">
             View our recent results <a href="analysis.html">here!</a>
         </h4>
@@ -42,10 +47,10 @@
                 </li>
             </ul>
         </footer>
-        <div class="progress-bar-space"></div>
+        <!-- <div class="progress-bar-space"></div>
         <div class="progress-bar">
             <img id="progressBarImage" src="imgs/mario_transparent.png">
-        </div>
+        </div> -->
         <script src="script.js"></script>
     </body>
 

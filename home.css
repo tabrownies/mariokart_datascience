@@ -1,9 +1,27 @@
 /* body paragraphs */
+#content{
+    width:100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:40px;
+}
 
-p{
-    width:65vw;
-    font-size:30px;
+#content p{
+    display: flex;
+    justify-content: center;
+    font-size:45px;
+    padding:40px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+#content img{
     padding:30px;
+    width:100%;
+}
+#content #toad{
+    width:initial;
+    height:100%;
 }
 h4{
     font-size:40px;
