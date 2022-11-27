@@ -3,54 +3,59 @@
 
     <head>
         <link href="style.css" rel="stylesheet" type="text/css">
-        <link href="home.css" rel="stylesheet" type="text/css">
     </head>
 
-    <body onscroll="dummy(event)">
+    <body>
         <header>
-            <span id="logoMarioKart">Mario Kart</span> <span id="logoDataScience">Data Science</span>
-            <nav>
-                <ul>
-                    <!-- <li><a href="index.html">Home</a></ldi> -->
-                    <li><a href="analysis.html">Analysis</a></li>
-                    <li><a href="datasets.html">Datasets</a></li>
-                </ul>
-            </nav>
+            Mario Kart Data Science
         </header>
-        <div id="content">
+        <div class="content dark">
             <img src="imgs/mario.png">
             <p>
-                Mario Kart is one of the best selling video games of all time. We're a team of budding data scientists excited to apply our newfound skills to everything Mario Kart.
+                We're a <span class="paragraph-color-emphasis-mario">team</span> of budding <span class="paragraph-color-emphasis-mario">data scientists</span> excited to apply our newfound skills to everything <span class="paragraph-color-emphasis-mario">Mario Kart.</span>
             </p>
+        </div>
+        <div class="content light">
             <p>
-                Welcome to the world where Luigi meets Logistic Regression, karts meet KMeans classification, and Koopa Troopas meet Pandas.
+                Welcome to the world where Luigi meets <span class="paragraph-color-emphasis-toad">Logistic Regression,</span> karts meet <span class="paragraph-color-emphasis-toad">KMeans,</span> and Koopa Troopas meet <span class="paragraph-color-emphasis-toad">Pandas!</span>
             </p>
             <img src="imgs/toad.png" id="toad">
         </div>
-        
-        <h4 class="view-results">
-            View our recent results <a href="analysis.html">here!</a>
-        </h4>
-        <footer>
+        <div class="results dark">
+            <h2>
+                Explore our recent results
+            </h2>
             <ul>
                 <li>
-                    Future Ideas
+                    <a href="#" class="result-link">
+                        <img src="analysis_pages/mk8d_course_cluster/course_cluster_150.png">
+                        <h2>asdf</h2>
+                    </a>
+                    
                 </li>
                 <li>
-                    Contact Us
+                    <a href="#" class="result-link">
+                        <img src="analysis_pages/mk8d_course_cluster/course_cluster_150.png">
+                        <h2>asdf</h2>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="#" class="result-link">
+                        <img src="analysis_pages/mk8d_course_cluster/course_cluster_150.png">
+                        <h2>asdf</h2>
+                    </a>
+                    
                 </li>
                 <li>
-                    About us
-                </li>
-                <li>
-                    Our Inspiration
-                </li>
+                    <a href="#" class="result-link">
+                        <img src="analysis_pages/mk8d_course_cluster/course_cluster_150.png">
+                        <h2>asdf</h2>
+                    </a>
+                    
+                </li> -->
             </ul>
-        </footer>
-        <!-- <div class="progress-bar-space"></div>
-        <div class="progress-bar">
-            <img id="progressBarImage" src="imgs/mario_transparent.png">
-        </div> -->
+        </div>
         <script src="script.js"></script>
     </body>
 

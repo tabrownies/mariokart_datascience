@@ -1,36 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-    /* --text: #0F1A20;
-    --background: #88A2AA;
-    --base: #ADA296;
-    --highlight: #F42C04;
-    --subtle: #E2856E;
-
-    /*  */
-    /* CSS HEX 
-    --base: #F00E2Bff;
-    --highlight: #E9E6E2ff;
-    --text: #183E67ff;
-    --subtle: #C3C9CEff;
-    --background: #FDFDFDff;
-
-    /* CSS HEX 
-    --background: #47332Cff;
-    --base: #FDFDFDff;
-    --red-pigment: #F00E2Bff;
-    --highlight: #1175C6ff;
-    --international-orange-engineering: #BD0312ff;
-    --platinum: #E9E6E2ff; */
-    /* --text1: #010A10;
-    --text2: #211D21;
-    --background1: #FFFBF2;
-    --background2: #DFE2DB;
-    --highlight1: #C10206;
-    --highlight2: #A50113; */
-    --text1: black;
+    --background1: #0e0e0e;
     --text2: var(--text1);
-    --background1: #EFEFEF;
+    --text1: #EEE;
     --background2: #CAEBF2;
     --highlight1: #FF3B3F;
     --highlight2: #A9A9A9;
@@ -40,10 +13,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans';
 }
 
 body {
-    font-family: 'Open Sans';
+    height:100%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -53,99 +27,91 @@ body {
 
 /* header styles */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:40px;
+    
     margin-top:60px;
     color: var(--text1);
-
-}
-#logoMarioKart{
     font-size: 80px;
     font-weight: 600;
 }
-#logoDataScience{
-    font-size:100px;
-}
 
-/* nav styles */
-nav {
-    display:flex;
-    justify-content: center;
-    padding-bottom:20px;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-nav ul li {
-    font-size: 40px;
-    padding: 20px 50px;
-    justify-content: center;
-}
-
-nav ul li:hover {
-}
-
-nav ul li a {
-}
-
-a{
-    color:var(--highlight1);
-}
-a:hover{
-    opacity: .6;
-    text-decoration: none;
-}
-
-/* footer info */
-footer{
-    /* display: none; */
-    background-color:var(--background2);
-    border-top:var(--highlight1) 3px solid;
-}
-footer ul{
+/* body paragraphs */
+.content{
     width:100vw;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    font-size:25px;
-    /* this should have the same color as the spacer */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:40px;
+    align-items: center;
+    box-shadow:0px 5px;
 }
-footer ul li{
-    padding:20px;
-}
-footer a{
+.dark{
     color: var(--text1);
+    background-color: var(--background1);
 }
-footer a:hover{
-    color: var(--highlight1);
-    opacity:initial;
+.light{
+    color: var(--background1);
+    background-color: var(--text1);
+}
+
+.content p{
+    font-size:45px;
+    padding:40px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.content img{
+    /* padding:30px; */
+    width:100%;
+}
+.results h2{
+    font-size:50px;
+    padding:60px;
+}
+.results ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+/* project list styles */
+.result-link {
+    aspect-ratio: 4/3;
+    border: 2px solid var(--dark);
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    position:relative;
+    color:inherit;
+    z-index: 2;
+    width:35vw;
+    margin:20px;
+}
+
+.result-link img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.result-link h2 {
+    position: absolute;
+    top: 4px;
+    left:4px;
+    right:4px;
+    /* height: 40px; */
+    /* width:100%; */
+    padding: 10px 20px;
+    background-color: var(--background1);
+    color:var(--dark);
+    display: flex;
+    align-items: center;
 }
 
 
-/* progress bar CSS */
-.progress-bar {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    height:100px;
+.paragraph-color-emphasis-mario{
+    color: rgb(224,50,53);
 }
-.progress-bar-space{
-    width:100vw;
-    height:100px;
-    background-color: var(--background2);
-}
-
-
-.progress-bar img {
-    height:100%;
-    text-align: right;
-    line-height: 30px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+.paragraph-color-emphasis-toad{
+    color: rgb(206, 141, 106);
 }
